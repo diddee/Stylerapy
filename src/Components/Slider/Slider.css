@@ -1,0 +1,46 @@
+.Slider{
+    height: 80%;
+    position: relative;
+    width: 100%;
+}
+.Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+.Slider h2{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: white;
+}
+.Slider button{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    font-size: medium;
+}
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+.Main span{
+    width: 7px;
+    height: 7px;
+    background-color: grey;
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
