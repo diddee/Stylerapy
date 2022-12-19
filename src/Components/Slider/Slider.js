@@ -22,6 +22,7 @@ const Slider = () => {
 
     return () => clearTimeout(timer)
 
+  
   }, [currentState])
 
   const data =[
