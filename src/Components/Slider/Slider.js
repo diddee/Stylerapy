@@ -11,16 +11,17 @@ const Slider = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      
       if (currentState===2) {
         setCurrentState(0)
       }
       else{
         setCurrentState(currentState + 1)
-
       }
     }, 3000)
+
     return () => clearTimeout(timer)
-    
+
   }, [currentState])
 
   const data =[
