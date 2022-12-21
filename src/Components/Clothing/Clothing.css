@@ -1,0 +1,23 @@
+.Clothing{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.Clothing h1{
+    margin: 3rem 0;
+}
+.Collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.Item{
+    flex-basis: 25%;
+    margin: 3rem 0;
+
+}
+.Item img{
+    width: 80%;
+    height: 90%;
+}

@@ -1,5 +1,5 @@
 .Slider{
-    height: 80%;
+    height: 80vh;
     position: relative;
     width: 100%;
 }
@@ -16,6 +16,7 @@
     top: 60%;
     left: 10%;
     color: white;
+    font-family: 'Lato';
 }
 .Slider button{
     position: absolute;
@@ -25,6 +26,7 @@
     color: black;
     padding: 15px 25px;
     border: none;
+    font-family: 'Lato';
     font-size: medium;
 }
 .Main{
@@ -44,3 +46,24 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 550px){
+    .Slider h2{
+        font-size: 1.2rem;
+        top: 66%;
+    }
+    .Slider button{
+        font-size: large;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .Slider h2{
+        font-size: 1rem;
+        top: 62%;
+    }
+    .Slider button{
+        font-size: large;
+    }
+}border: ;

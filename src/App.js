@@ -1,12 +1,16 @@
 import React from 'react'
+import Nav from './Components/Nav/Nav'
 import Slider from "./Components/Slider/Slider"
+import Clothing from './Components/Clothing/Clothing'
 import "./App.css"
 
 function App() {
   return (
     <div className='App'>
-      <h1>STYLERAPY</h1>
+      <Nav />
       <Slider />
+      <Clothing />
+
     </div>
   )
 }
