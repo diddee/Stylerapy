@@ -1,55 +1,22 @@
 import React from 'react'
-import Nav from './Components/Nav/Nav'
-import Slider from "./Components/Slider/Slider"
-import Clothing from './Components/Clothing/Clothing'
-import "./App.css"
+import { Route, Routes } from "react-router-dom"
+import Home from './Components/HomePage/HomePage';
+import Contact from './Components/ContactPage/Contact';
+import './App.css';
+
 
 function App() {
   return (
-    <div className='App'>
-      <Nav />
-      <Slider />
-      <Clothing />
+    <div className="App">
+      <Routes>
+        <Route path="/" element= { <Home/> } />
+        <Route path="/Contact" element= { <Contact/> } />
 
+      </Routes>
+      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import Slider from "./Slider/Slider"
-// // import imageSlider from './Components/Data'
-// import "./App.css"
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Slider />
-//       <h1>STYLERAPY</h1>
-      
-//     </div>
-//   );
-// }
-
-// export default App;

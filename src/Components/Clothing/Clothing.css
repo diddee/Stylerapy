@@ -21,3 +21,10 @@
     width: 80%;
     height: 90%;
 }
+
+@media screen and (max-width: 500px){
+    .Item{
+        flex-basis: 48%;
+    
+    }
+}
