@@ -14,6 +14,13 @@ const Nav = () => {
     const navDisplayHandler = () => {
         setDisplayNav(!displayNav)
     }
+
+    const [displayCart, setDisplayCart] = useState(false)
+
+    const cartDisplayHandler =() => {
+        setDisplayCart(!displayCart)
+
+    }
   return (
     <div className='Nav'>
         <div className="Hamburger" onClick={navDisplayHandler}>
@@ -24,7 +31,7 @@ const Nav = () => {
         </div>
         <div className="Icons">
             <SearchIcon fontSize="large" />
-            <ShoppingCartIcon fontSize="large" />
+            <ShoppingCartIcon fontSize="large" onClick={cartDisplayHandler} />
 
         </div>
         <ul className={displayNav ? "NavList" : "NavList active"}>
@@ -54,6 +61,15 @@ const Nav = () => {
             </li>
                 
         </ul>
+        <div className={displayCart ? "Cart" : "NavList active"}>
+            <div className='CartNav'>
+                <p>Cart</p>
+                <CloseIcon className='CartClose' onClick={cartDisplayHandler} />
+            </div>
+            <div className="CartInfo">
+                Your Cart is Empty!
+            </div>
+        </div>
 
       
     </div>
